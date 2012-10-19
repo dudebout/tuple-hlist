@@ -1,0 +1,8 @@
+dist
+cabal-dev
+dist_*
+.hsenv_*
+*.o
+*.hi
+*.chi
+*.chs.h
