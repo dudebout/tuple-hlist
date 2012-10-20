@@ -1,5 +1,5 @@
 name:                tuple-hlist
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Functions to convert between tuples and HLists.
 description:         Functions to convert between tuples and HLists, overloaded on tuple size.
 homepage:            http://github.com/dudebout/tuple-hlist
@@ -19,7 +19,9 @@ extra-source-files:
 
 library
   exposed-modules:     Data.Tuple.HList
-  build-depends:       base ==4.5.*, OneTuple ==0.2.*, HList ==0.2.*
+  build-depends:       base     >= 4.5 && < 5
+                     , OneTuple >= 0.2 && < 0.3
+                     , HList    >= 0.2 && < 0.3
   hs-source-dirs:      src
 
 source-repository head
