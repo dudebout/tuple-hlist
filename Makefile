@@ -1,7 +1,7 @@
 script = Tools/generateInstances.hs
 incomplete_source = Tools/IncompleteHList.hs
 instances_number = 15
-result_dir = Data/Tuple
+result_dir = src/Data/Tuple
 result = $(result_dir)/HList.hs
 
 .PHONY: all
