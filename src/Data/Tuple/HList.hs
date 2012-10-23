@@ -12,7 +12,7 @@ module HList (HLst(toHList, fromHList)) where
 import Data.Tuple.OneTuple (OneTuple(OneTuple))
 import Data.HList (HNil(HNil), HCons(HCons), (:*:), hEnd, hBuild)
 
-class HLst a b | a -> b where
+class HLst a b | a -> b, b -> a where
     -- |Creates an HList from a tuple.
     toHList   :: a -> b
     -- |Creates a tuple from an HList.
