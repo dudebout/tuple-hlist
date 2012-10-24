@@ -7,7 +7,7 @@
 This module contains overloaded functions for creating an HList from a tuple or
 a tuple from an HList.
 -}
-module HList (HLst(toHList, fromHList)) where
+module Data.Tuple.HList (HLst(toHList, fromHList)) where
 
 import Data.Tuple.OneTuple (OneTuple(OneTuple))
 import Data.HList (HNil(HNil), HCons(HCons), (:*:), hEnd, hBuild)
