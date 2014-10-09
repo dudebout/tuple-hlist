@@ -23,6 +23,6 @@ generateInstance i = intercalate "\n" [instanceStr, toHListStr, fromHListStr]
         tupleType      =  tuple
         tuplePattern   = tuple
         tupleConstruct = tuple
-        hlistType      = "(" ++ intercalate " :*: " (vars ++ ["HNil"]) ++ ")"
+        hlistType      = "(HList '[" ++ intercalate ", " vars ++ "])"
         hlistPattern   = intercalate " " (map ("(HCons "++) vars) ++ " HNil" ++ take i (repeat ')')
         hlistConstruct = "hEnd $ hBuild " ++ unwords vars
