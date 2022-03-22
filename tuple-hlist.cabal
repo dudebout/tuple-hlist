@@ -20,8 +20,8 @@ extra-source-files:
 library
   exposed-modules:     Data.Tuple.HList
   build-depends:       base     >= 4.6 && < 5
-                     , OneTuple >= 0.2 && < 0.3
-                     , HList    >= 0.3 && < 0.5
+                     , OneTuple >= 0.3 && < 0.4
+                     , HList    >= 0.3 && < 0.6
   hs-source-dirs:      src
 
 source-repository head
